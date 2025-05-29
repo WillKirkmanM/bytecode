@@ -1,0 +1,9 @@
+*.exe
+*.o
+*.a
+*.gcda
+*.gcno
+*.so
+
+# GoLand project files
+.idea/
