@@ -1,0 +1,10 @@
+; Simple calculator: (5 + 3) * 2 - 1
+LOAD_CONST 5
+LOAD_CONST 3
+ADD             ; Stack: [8]
+LOAD_CONST 2
+MUL             ; Stack: [16] 
+LOAD_CONST 1
+SUB             ; Stack: [15]
+PRINT           ; Output: 15
+HALT
