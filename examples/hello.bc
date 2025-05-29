@@ -1,0 +1,4 @@
+; Hello program that prints 42
+LOAD_CONST 42
+PRINT
+HALT
