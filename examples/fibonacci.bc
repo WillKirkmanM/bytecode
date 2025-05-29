@@ -1,0 +1,44 @@
+; Fibonacci sequence generator (first 10 numbers)
+; Initialize: a=0, b=1, counter=10
+LOAD_CONST 0
+STORE_VAR 0
+LOAD_CONST 1  
+STORE_VAR 1
+LOAD_CONST 10
+STORE_VAR 2
+
+; Print first number (0)
+LOAD_VAR 0
+PRINT
+
+; Main loop
+loop:
+    LOAD_VAR 2      ; Load counter
+    JZ end          ; Jump to end if counter is 0
+    
+    ; Print current b
+    LOAD_VAR 1
+    PRINT
+    
+    ; Calculate next: temp = a + b
+    LOAD_VAR 0      ; Load a
+    LOAD_VAR 1      ; Load b  
+    ADD
+    STORE_VAR 3     ; Store in temp
+    
+    ; Update: a = b, b = temp
+    LOAD_VAR 1      ; Load b
+    STORE_VAR 0     ; a = b
+    LOAD_VAR 3      ; Load temp
+    STORE_VAR 1     ; b = temp
+    
+    ; Decrement counter
+    LOAD_VAR 2      ; Load counter
+    LOAD_CONST 1
+    SUB
+    STORE_VAR 2     ; counter--
+    
+    JMP loop        ; Continue loop
+
+end:
+    HALT
