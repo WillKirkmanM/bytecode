@@ -1,3 +1,12 @@
+
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" width="150" />
+</p>
+<h1 align="center">ByteCode</h1>
+
+<p align="center">A Stack-Based Virtual Machine & ByteCode Interpreter, Featuring a Custom Instruction Set with Arithmetic Operations, Symbolic Variable Storage, Control Flow (JMP, JZ, JNZ) and an Integrated Assembler. Includes a CLI runner, REPL mode & a Modular, Extendable Architecture</p>
+
+
 ## Features
 
 - Basic arithmetic operations (ADD, SUB, MUL, DIV)
